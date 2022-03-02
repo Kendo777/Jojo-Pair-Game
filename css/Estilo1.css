@@ -1,0 +1,144 @@
+@font-face {
+	font-family: 'CGFLocustResistance';
+	src: url('./CGFLocustResistance.eot');
+	src: local('CGFLocustResistance'), url('./CGFLocustResistance.woff') format('woff'), url('./CGFLocustResistance.ttf') format('truetype');
+}
+
+
+
+body
+{
+    
+background:url("fondo.jpg");
+background-repeat: no-repeat;
+background-size:cover;
+background-position:center;
+
+    
+}
+.win
+{
+       
+background: url(giphy1.gif) no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover; 
+     
+}
+.flipCard {
+  -webkit-perspective: 800;
+  -ms-perspective: 800;
+  -moz-perspective: 800;
+  -o-perspective: 800;
+   width: 300px;
+   height: 180px;
+   position: relative;
+   margin: 10px auto;
+}
+.flipCard .card.flipped {
+  transform:rotatey(-180deg);
+  -ms-transform:rotatey(-180deg); /* IE 9 */
+  -moz-transform:rotatey(-180deg); /* Firefox */
+  -webkit-transform:rotatey(-180deg); /* Safari and Chrome */
+  -o-transform:rotatey(-180deg); /* Opera */
+}
+.flipCard .card {
+  width: 100%;
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: 0.5s;
+  -moz-transform-style: preserve-3d;
+  -moz-transition: 0.5s;
+  -ms-transform-style: preserve-3d;
+  -ms-transition: 0.5s;
+  -o-transform-style: preserve-3d;
+  -o-transition: 0.5s;
+  transform-style: preserve-3d;
+  transition: 0.5s;
+}
+.flipCard .card .side {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  cursor: pointer;
+  position: absolute;
+  box-sizing: border-box;
+  z-index: 2;
+  backface-visibility: hidden;  /* W3C */
+  -webkit-backface-visibility: hidden; /* Safari & Chrome */
+  -moz-backface-visibility: hidden; /* Firefox */
+  -ms-backface-visibility: hidden; /* Internet Explorer */
+  -o-backface-visibility: hidden; /* Opera */
+  box-shadow: 0 0 10px rgba(0,0,0,0.6);
+  overflow: auto;
+}
+.flipCard .card .back {
+  background: white;
+  color: black;
+  transform:rotatey(-180deg);
+  -ms-transform:rotatey(-180deg); /* IE 9 */
+  -moz-transform:rotatey(-180deg); /* Firefox */
+  -webkit-transform:rotatey(-180deg); /* Safari and Chrome */
+  -o-transform:rotatey(-180deg); /* Opera */
+}
+
+.flipCard .card .front {
+
+  line-height: 160px;
+  background-image: url(giphy.gif);
+    background-size:100% 100%;
+border: 3px solid white;
+  color: white;
+
+}
+.flipCard .card .back {
+  border: 3px solid white;
+}
+
+.wrapper {
+display: grid;
+/*grid-gap: how big gap is around every cell*/
+grid-gap: 10px;
+/*grid-template-columns: how many columns container is having*/
+/*alternative 1fr 2fr 1fr*/
+grid-template-rows: 1fr 1fr 1fr 1fr;
+color: #444;
+
+}
+
+.info{
+    
+    grid-row: 4;
+    grid-column: 1;
+    color: white;
+   /*font-family: "Comic Sans MS", cursive, sans-serif;*/
+    font-family: 'CGFLocustResistance';
+    width: 300px;
+   height: 100px;
+    background-color: rgba(0, 0, 0, 0.5);;
+    margin-left: 140px;
+    
+    
+}
+.lose
+{
+    
+    grid-row: 4;
+    grid-column: 4;
+    margin-left: 170px;
+}
+
+.PIZZADOG{
+    grid-row: 4;
+    grid-column: 2/4;
+    text-align: center;
+    font-family: 'CGFLocustResistance';
+    background-color: rgba(0, 0, 0, 0.5);;
+    color: white;
+}
+
+    
+
+    
+    
